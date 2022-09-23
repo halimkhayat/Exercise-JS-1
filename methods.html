@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    //   function getValue() {
+    //   var titlename = document.getElementById("myHeader");
+    //   document.write("I like to eat ");
+    //   document.write(titlename.innerHTML);
+    // }
+
+        function openWindow() {
+          smallWindow = window.open("","", "width=100, height=100");
+          smallWindow.document.write("<h1>Hello There!</h1>");
+        }
+
+        function closeWindow() {
+          smallWindow.close()
+        }
+    </script>
+  </head>
+  <body>
+    <!-- <p id="myHeader" onclick="getValue()">pasta</p> -->
+    <input type="button" name="" value="open a small window" onclick="openWindow()">
+    <input type="button" name="" value="close window" onclick="closeWindow()">
+
+
+  </body>
+</html>

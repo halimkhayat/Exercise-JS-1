@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      // function welcome() {
+      //   alert("Welcome!");
+      // }
+
+      var x = 0;
+      var y = 0;
+
+      function enterNumbers() {
+        x = prompt("First number", "1,2,3...");
+        y = prompt("Second number", "1,2,3...");
+      }
+
+      function calculate() {
+        var result = parseInt(x) + parseInt(y);
+        document.write(result);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <input type="button" name="" value="Click me" id="myButton" onclick="welcome()"> -->
+
+    <input type="button" name="" value="Enter numbers" id="button1" onclick="enterNumbers()">
+    <input type="button" name="" value="Calculate" id="button2" onclick="calculate()">
+  </body>
+</html>
